@@ -71,10 +71,15 @@ export default defineConfig({
     outline: "deep",
     outlineTitle: "TOC",
     editLink: {
-      pattern: "https://github.com/marginnoteapp/ohmymn-docs/tree/main/:path",
+      pattern:
+        "https://github.com/marginnoteapp/ohmymn-docs-cn/tree/main/:path",
       text: "为此页提供修改建议"
     },
 
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇"
+    },
     algolia: {
       appId: "58GKGEP8Q0",
       apiKey: "27d364ba4e1ef8bd5f374377f0941845",
@@ -107,10 +112,6 @@ export default defineConfig({
           {
             text: "版本发布",
             link: releases
-          },
-          {
-            text: "社区指南",
-            link: contributing
           }
         ]
       }
