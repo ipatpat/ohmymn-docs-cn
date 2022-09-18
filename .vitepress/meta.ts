@@ -3,7 +3,7 @@
 /* Texts */
 export const ohmymnName = "OhMyMN"
 export const ohmymnShortName = "OhMyMN"
-export const ohmymnDescription = "MarginNote 插件控制面板及开发框架"
+export const ohmymnDescription = "MarginNote 插件开发框架"
 
 /* CDN fonts and styles */
 export const googleapis = "https://fonts.googleapis.com"
@@ -17,8 +17,6 @@ export const ogImage = `${ogUrl}og.jpg`
 /* GitHub and social links */
 export const github = "https://github.com/marginnoteapp/ohmymn"
 export const releases = "https://github.com/marginnoteapp/ohmymn/releases"
-export const contributing =
-  "https://github.com/marginnoteapp/ohmymn/blob/main/CONTRIBUTING.md"
 
 /* Avatar/Image/Sponsors servers */
 export const preconnectLinks = [googleapis, gstatic]

@@ -14,8 +14,8 @@ OhMyMN 中有大量的自定义，方便你定制。主要是三种格式：
 
 [正则表达式](regex.md) 有两个作用：
 
-1. 判断是否满足条件，比如 [Another AutoTitle](./modules/anotherautotitle.md) 中用来判断是否可以转为标题。
-2. 作为分隔点，将一段话分隔为多个部分，比如 [Another AutoDef](./modules/anotherautodef.md) 自定义定义联项，将定义分为定义项和被定义项两部分。
+1. 判断是否满足条件，比如 [Another AutoTitle](modules/anotherautotitle.md) 中用来判断是否可以转为标题。
+2. 作为分隔点，将一段话分隔为多个部分，比如 [Another AutoDef](modules/anotherautodef.md) 自定义定义联项，将定义分为定义项和被定义项两部分。
 
 有六种输入格式：
 
@@ -64,4 +64,4 @@ OhMyMN 中有大量的自定义，方便你定制。主要是三种格式：
 
 ## 模版
 
-这个就没什么好说的了，看 [模版语法](./mustache.md) 以及 [模版变量](./vars.md)。
+这个就没什么好说的了，看 [模版语法](mustache.md) 以及 [模版变量](vars.md)。

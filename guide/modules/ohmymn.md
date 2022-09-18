@@ -29,7 +29,7 @@
 
 ## 如果标题存在
 
-[Another AutoTitle](./anotherautotitle.md), [Another AutoDef](./anotherautodef.md), [AutoComplete](./autocomplete.md) 都可以将摘录转为标题。在标题存在的前提下，使用 [拖拽选区合并](../tips.md#拖拽合并) 进卡片中，如果满足自动转为标题的条件，将会有以下几种处理办法：
+[Another AutoTitle](anotherautotitle.md), [Another AutoDef](anotherautodef.md), [AutoComplete](autocomplete.md) 都可以将摘录转为标题。在标题存在的前提下，使用 [拖拽选区合并](../tips.md#拖拽合并) 进卡片中，如果满足自动转为标题的条件，将会有以下几种处理办法：
 
 - 不转为标题
 - 合并标题：使用 `; ` 合并标题，可用于标题链接。

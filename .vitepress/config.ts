@@ -2,7 +2,6 @@ import { defineConfig } from "vitepress"
 import { version } from "../package.json"
 import media from "./markdown-it/media"
 import {
-  contributing,
   font,
   github,
   ogImage,

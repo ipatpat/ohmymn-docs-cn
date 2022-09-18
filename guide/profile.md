@@ -14,7 +14,7 @@ OhMyMN 将所有配置选项分为了全局配置，笔记本配置以及文档�
 
 ## 导出
 
-你还可以将所有的配置导出到脑图卡片中，这样就可以随着 MN 一起使用 iCloud 同步，也可以通过导出笔记本来分享配置文件。更多内容可以继续阅读 [MagicAction for Card-配置管理](./modules/magicaction4card#配置管理)。
+你还可以将所有的配置导出到脑图卡片中，这样就可以随着 MN 一起使用 iCloud 同步，也可以通过导出笔记本来分享配置文件。更多内容可以继续阅读 [MagicAction for Card-配置管理](modules/magicaction4card#配置管理)。
 
 ## 将自定义设置写入卡片中
 

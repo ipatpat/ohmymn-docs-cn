@@ -1,6 +1,6 @@
 # Another AutoDef
 
-该功能与 [Another AutoTitle](./anotherautotitle.md) 的区别在于，Another AutoTitle 主要用于将摘录转换为标题，而 Another AutoDef 更多是将摘录的部分内容作为标题，剩余部分作为摘录，起到的是分割和提取的作用。
+该功能与 [Another AutoTitle](anotherautotitle.md) 的区别在于，Another AutoTitle 主要用于将摘录转换为标题，而 Another AutoDef 更多是将摘录的部分内容作为标题，剩余部分作为摘录，起到的是分割和提取的作用。
 
 至于为什么叫做 AutoDef，因为这个功能最常用到的就是定义。
 

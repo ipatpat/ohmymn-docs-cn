@@ -16,6 +16,6 @@
 
 - 首页设置 -> 拖拽 -> 合并入
 
-看看效果，配合 [Another AutoTitle](./modules/anotherautotitle.md)。
+看看效果，配合 [Another AutoTitle](modules/anotherautotitle.md)。
 
-@video[https://www.bilibili.com/video/BV1C5411Z7rD](https://video-direct-link.vercel.app/bili.mp4?aid=466171154&bvid=BV1C5411Z7rD&cid=499907112)
+@video[https://www.bilibili.com/video/BV1C5411Z7rD](https://video.busiyi.world/bili.mp4?aid=466171154&bvid=BV1C5411Z7rD&cid=499907112)
