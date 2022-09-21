@@ -88,3 +88,30 @@ img.resizable-img {
  color: #909090;
  font-size: 12px;
 }
+
+.vp-doc video,
+.VPDoc .vp-doc img {
+ border-radius: 8px;
+ margin: 0 auto;
+}
+
+.VPDoc .vp-doc a {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.VPDoc .vp-doc a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.vp-doc .custom-block a {
+  opacity: 0.8;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.vp-doc .custom-block a:hover {
+  opacity: 1;
+  border-bottom: 1px solid;
+}

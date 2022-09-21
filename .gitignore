@@ -11,10 +11,6 @@ node_modules
 dist
 .idea
 .DS_Store
-bench/test/*/*/
-cypress/videos
-cypress/downloads
-cypress/screenshots
 public/user-avatars
 public/sponsors
 .vscode
