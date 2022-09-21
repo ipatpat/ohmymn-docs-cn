@@ -30,7 +30,9 @@ CopySearch 给出的解决方案是 `动态选择`
 
 ### 自定义
 
-输入格式： [模版](../custom.md#模版)
+::: warning 输入格式
+[模版](../custom.md#模版)
+:::
 
 ::: v-pre
 
@@ -57,5 +59,7 @@ CopySearch 给出的解决方案是 `动态选择`
 
 - 欧陆词典：`eudic://dict/{{keyword}}`
 - 百度搜索：`https://www.baidu.com/s?wd={{keyword}}`
+
   - 指定 Edge 浏览器打开百度搜索：`microsoft-edge-https://baidu.com/s?wd={{keyword}}`
-    :::
+
+:::
