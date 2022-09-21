@@ -5,7 +5,7 @@
 ## 自定义
 
 ::: warning 输入格式
-[replace 函数格式](../custom.md#replace-函数)
+[replace 函数格式——替换](../custom.md#replace-函数)
 :::
 
 ## OCR Pro 常见错误（待补充）
@@ -14,4 +14,4 @@
 
 ### 替换摘录文字
 
-自定义输入格式：[replace 函数格式](../custom.md#replace-函数)
+自定义输入格式：[replace 函数格式——替换](../custom.md#replace-函数)

@@ -109,7 +109,11 @@ export default defineConfig({
         text: `v${version}`,
         items: [
           {
-            text: "版本发布",
+            text: "签名版本",
+            link: "https://bbs.marginnote.cn/t/topic/20501"
+          },
+          {
+            text: "未签名版本",
             link: releases
           }
         ]

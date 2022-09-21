@@ -20,10 +20,8 @@
 ## 自定义
 
 ::: warning 输入格式
-[replace 函数格式](../custom.md#replace-函数)
+[replace 函数格式——替换](../custom.md#replace-函数)
 :::
-
-就是一般的 replace 替换。
 
 ## 英文标题规范化
 

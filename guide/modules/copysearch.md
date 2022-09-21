@@ -30,7 +30,7 @@ CopySearch 给出的解决方案是 `动态选择`
 
 ### 自定义
 
-::: warning 输入格式
+::: warning 自定义格式
 [模版](../custom.md#模版)
 :::
 

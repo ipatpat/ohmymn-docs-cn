@@ -5,7 +5,7 @@
 ## 自定义
 
 ::: warning 自定义格式
-[replace() 函数格式——提取](../custom.md#replace-函数)
+[replace 函数格式——提取](../custom.md#replace-函数)
 :::
 
 **例**
@@ -17,7 +17,7 @@
 ### 添加标签
 
 ::: warning 输入格式
-[replace() 函数格式——提取](../custom.md#replace-函数)
+[replace 函数格式——提取](../custom.md#replace-函数)
 :::
 
 由于大部分情况下只是为了添加标签，而无须提取，所以你可以直接输入标签内容，我会将其补全为 `(/./, "标签")`。

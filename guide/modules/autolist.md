@@ -26,7 +26,7 @@
 ## 自定义
 
 ::: warning 输入格式
-[replace 函数格式](../custom.md#replace-函数)
+[replace 函数格式——替换](../custom.md#replace-函数)
 :::
 
 在匹配到的字符串前面或者后面加上 `\n` 即可，这就是换行符。
