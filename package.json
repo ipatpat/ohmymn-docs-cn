@@ -1,6 +1,6 @@
 {
-  "name": "ohmymn-doc",
-  "version": "4.0.0",
+  "name": "ohmymn-doc-cn",
+  "version": "4.1.0",
   "scripts": {
     "dev": "vitepress --port 3333",
     "build": "pnpm prefetch && vitepress build && node .vitepress/scripts/build-pwa.mjs",

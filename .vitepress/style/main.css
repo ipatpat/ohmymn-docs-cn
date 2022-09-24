@@ -105,6 +105,11 @@ img.resizable-img {
   border-bottom: 1px solid;
 }
 
+.VPDoc .vp-doc a.header-anchor:hover,
+.VPDoc .vp-doc a.header-anchor {
+  border-bottom: 0px solid;
+}
+
 .vp-doc .custom-block a {
   opacity: 0.8;
   text-decoration: none;
