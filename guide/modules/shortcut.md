@@ -10,8 +10,8 @@
 
 通过 URL Scheme 来触发 MagicAction 中的动作，在 Mac 上可以设置快捷键打开 URL。
 
-1. 打开 `marginnote3app://addon/ohmymn?type=card&shortcut=1` 就可以触发一个卡片动作。
-2. 打开 `marginnote3app://addon/ohmymn?type=text&shortcut=1` 就可以触发一个文字动作。
+1. 打开 `marginnote3app://addon/ohmymn?type=card&shortcut=1` 就可以触发第一个卡片动作。
+2. 打开 `marginnote3app://addon/ohmymn?type=text&shortcut=1` 就可以触发第一个文字动作。
 
 ## 捷径 Pro
 

@@ -34,7 +34,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 - **模版变量**：
   - 移除 `excerpts.img`，`excerpts.base64`，`comments.img`，`comments.base64`，`comments.nopic`。
   - 添加 `excerpts.text`, `comments.text`。
-  - 移除 `allText`，增加 `allTextPic.text`, `allTextPic.text`, `allTextPic.md`, `allTextPic.html`。
+  - 移除 `allText`，增加 `allTextPic.text`, `allTextPic.ocr`, `allTextPic.md`, `allTextPic.html`。
   - 添加 `doc.url.pure`，`doc.url.md`，`doc.url.html`。文档没有直达的 URL，但是可以利用当前文档的最新一个笔记的链接来间接跳转。
 
 ### 其他
@@ -45,7 +45,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 :::
 
-## v4.0.10 （2022-10-18）
+## v4.0.10 (2022-10-18)
 
 ### 新功能
 
@@ -62,13 +62,13 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 - **AutoTitle**：移除 “标题摘录始终为标题”。
 
-## v4.0.9 （2022-10-09）
+## v4.0.9 (2022-10-09)
 
 ### 修复
 
 - **MagicAction For Card**：修复合并卡片内文字的问题。
 
-## v4.0.8 （2022-10-07）
+## v4.0.8 (2022-10-07)
 
 ### 新功能
 
@@ -78,7 +78,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 :::
 
-## v4.0.7 （2022-10-04）
+## v4.0.7 (2022-10-04)
 
 ### 修复
 
@@ -89,7 +89,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 - **AutoDef**：自定义定义联项中如果使用正则数组，比如 [reg1,reg2]，则第一个为主正则，其余正则将对已经被主正则匹配到的内容再次进行判断，全部符合主正则才会作为分隔点。在自定义别名分词也是同理。
 
-## v4.0.6 （2022-10-04）
+## v4.0.6 (2022-10-04)
 
 ::: warning 注意
 该版本变化较大，主要测试升级后多选和单选的设置是否发生混乱，请先备份所有配置在升级。
@@ -109,13 +109,13 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 - **AutoFormat**：将 `删除所有空格` 的预设单独拆分出来，作为文档配置，仅当前文档生效。
 - **CopySearch**：自定义复制内容和自动搜索内容分开，可以单独设置。
 
-## v4.0.5 （2022-10-01）
+## v4.0.5 (2022-10-01)
 
 ### 修复
 
 - 修复 3.7.19 手势无法使用的问题，请升级到 3.7.19 的用户升级。
 
-## v4.0.4 （2022-09-02）
+## v4.0.4 (2022-09-02)
 
 ### 修复
 
@@ -131,7 +131,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 - 移除保持屏幕常亮的功能，改为单独一个插件。
 
-## v4.0.3 （2022-08-16）
+## v4.0.3 (2022-08-16)
 
 ### 修复
 
@@ -145,7 +145,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 - 自动备份配置变为手动输入备份卡片链接。
 
-## v4.0.2 （2022-08-13）
+## v4.0.2 (2022-08-13)
 
 ### 修复
 
@@ -159,7 +159,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 - 稍微美化了一下控制面板。
 
-## v4.0.1 （2022-08-06）
+## v4.0.1 (2022-08-06)
 
 ### 修复
 
@@ -171,7 +171,7 @@ https://bbs.marginnote.cn/t/topic/20501#heading-4
 
 - 改善各种 API key 在没有输入时的提示文字，更加易懂。
 
-## v4.0.0 （2022-08-01）
+## v4.0.0 (2022-08-01)
 
 ### 修复
 
