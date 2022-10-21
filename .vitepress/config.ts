@@ -1,12 +1,11 @@
 import { defineConfig } from "vitepress"
-import { version } from "../package.json"
+import { version, unsignedVersion } from "../package.json"
 import media from "./markdown-it/media"
 import {
   font,
   github,
   ogImage,
   ogUrl,
-  releases,
   ohmymnDescription,
   ohmymnName
 } from "./meta"
@@ -68,7 +67,7 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
     outline: "deep",
-    outlineTitle: "TOC",
+    outlineTitle: "目录",
     editLink: {
       pattern:
         "https://github.com/marginnoteapp/ohmymn-docs-cn/tree/main/:path",
@@ -109,12 +108,12 @@ export default defineConfig({
         text: `v${version}`,
         items: [
           {
-            text: "签名版本",
+            text: `签名版本（v${version}）`,
             link: "https://bbs.marginnote.cn/t/topic/20501"
           },
           {
-            text: "未签名版本",
-            link: releases
+            text: `未签名版本（v${unsignedVersion}）`,
+            link: "/update"
           }
         ]
       }

@@ -4,9 +4,9 @@
 仅 iPad 可用。该功能完全由 OhMyMN 提供，与 MN 无关。
 :::
 
-使用手势来触发 MagicAction 中的动作。
+![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/79b47e3272bf5eee9be5c5c9737ead591d312917.gif?x-oss-process=base_webp)
 
-@video[https://www.bilibili.com/video/BV1fb4y1E77b/](https://video.busiyi.world/bili.mp4?aid=636163121&bvid=BV1fb4y1E77b&cid=499697321)
+使用手势来触发 MagicAction 中的动作。
 
 ::: tip
 尽量在中间区域滑动，滑动速度慢且距离长。

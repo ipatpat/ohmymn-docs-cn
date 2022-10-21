@@ -1,7 +1,7 @@
 # AutoSimplify
 
 ::: tip 更新
-v4.1.0 新增
+[v4.0.6](/update.md) 新增
 :::
 
 **Powered by [OpenCC](https://github.com/BYVoid/OpenCC)**
