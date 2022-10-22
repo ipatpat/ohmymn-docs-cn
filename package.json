@@ -1,13 +1,14 @@
 {
   "name": "ohmymn-doc-cn",
   "version": "4.0.0",
-  "unsignedVersion": "4.0.11",
+  "unsignedVersion": "4.0.13",
   "scripts": {
     "dev": "vitepress --port 3333",
     "build": "pnpm prefetch && vitepress build && node .vitepress/scripts/build-pwa.mjs",
     "build-no-prefetch": "vitepress build && node .vitepress/scripts/build-pwa.mjs",
     "serve": "vitepress serve",
     "docsearch": "docker run -it --env-file=.env -e \"CONFIG=$(cat docsearch.json | jq -r tostring)\" algolia/docsearch-scraper",
+    "publish": "pnpm build && vercel deploy --prod",
     "preview-https": "pnpm build && serve .vitepress/dist",
     "prefetch": "tsx .vitepress/scripts/fetch-avatars.ts"
   },
