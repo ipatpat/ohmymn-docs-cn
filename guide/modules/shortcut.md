@@ -1,3 +1,6 @@
+<script setup>
+import Shortcut from '/.vitepress/components/Shortcut.vue';
+</script>
 # Shortcut
 
 ::: tip 更新
@@ -11,18 +14,22 @@
 通过 URL Scheme 来触发 MagicAction 中的动作，在 Mac 上可以设置快捷键打开 URL。
 
 1. 打开 `marginnote3app://addon/ohmymn?type=card&shortcut=1` 就可以触发第一个卡片动作。
-2. 打开 `marginnote3app://addon/ohmymn?type=text&shortcut=1` 就可以触发第一个文字动作。
+2. 打开 `marginnote3app://addon/ohmymn?type=text&shortcut=2` 就可以触发第二个文字动作。
 
 ## 捷径 Pro
+可以为每个动作以及任意输入值设置捷径，并将其设置成快捷键。
 
-::: warning 注意
-目前使用门槛较高，暂不公开具体的使用方式。之后会写一个工具来快速生成 URL。
+::: warning URL 生成器
+
+<Shortcut/>
+
 :::
 
 1. `marginnote3app://addon/ohmymn?type=pro&action=searchCardInfo&option=0`
     - 表示执行 `搜索卡片内容` 的动作，`option=0` 表示第一个选项，`中文`。
 2. `marginnote3app://addon/ohmymn?type=pro&action=renameTitle&option=0&content=%25%5B%221%22%5D%20%24%26`
     - 表示执行 `重命名标题` 的动作，输入 `%["1"] $&`，给选中卡片编号。（这里进行了 URL 编码）
+
 
 ## 怎么使用快捷键打开 URL
 ### iPad

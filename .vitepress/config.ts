@@ -16,6 +16,7 @@ export default defineConfig({
   title: ohmymnName,
   description: ohmymnDescription,
   head: [
+    ["meta", { name: "naive-ui-style" }],
     ["meta", { name: "theme-color", content: "#e9dd1b" }],
     ["link", { rel: "icon", href: "/logo.svg", type: "image/svg+xml" }],
     [

@@ -30,6 +30,7 @@ v4.0.6 之后，支持从 Metadata 插件（暂未发布，可在 QQ 频道中�
 | `allTextPic.html`                 | 字符串     | 卡片中的所有文字和图片，图片采用 base64 编码，添加 `<img src>` |
 | `tags`                            | 字符串数组 | 所有标签，没有 #                                              |
 | `titles`                          | 字符串数组 | 所有标题                                                     |
+| `excerpts.text`                   | 字符串数组 | 所有文字摘录                                                 |
 | `excerpts.ocr`                    | 字符串数组 | 所有摘录，图片摘录被 OCR 为文字                               |
 | `excerpts.html`                   | 字符串数组 | 所有摘录，图片摘录使用 base64 编码，添加 HTML 标签 `<img>`     |
 | `excerpts.md`                     | 字符串数组 | 所有摘录，图片摘录使用 base64 编码，添加 `![]()`               |
