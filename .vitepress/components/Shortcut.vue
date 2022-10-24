@@ -97,7 +97,7 @@ const cardActions = [
   {
     type: 3,
     label: '提取标题',
-    option: ['使用 AutoDef 中的配置', '确定'],
+    option: ['使用 AutoDef 中的设置', '确定'],
     key: 'extractTitle',
     moduleName: 'Another AutoDef',
     module: 'anotherautodef',
@@ -107,7 +107,7 @@ const cardActions = [
     type: 3,
     label: '拆分摘录',
     key: 'splitExcerpt',
-    option: ['使用 AutoDef 中的配置', '确定'],
+    option: ['使用 AutoDef 中的设置', '确定'],
     help: '该动作来自于 Another AutoDef，与其使用相同的设置。将摘录拆分为标题（被定义项）和摘录（定义项）两部分。',
     moduleName: 'Another AutoDef',
     module: 'anotherautodef'
@@ -314,7 +314,7 @@ const options = [
         label: k.label,
         children: k.option.map((o, i) => {
           return {
-            value: `${k.type === 3 && !/^使用.*的设置$/.test(k.label)}-${k.key}-${i}`,
+            value: `${h.value}-${k.type === 3 && !/使用.*的设置/.test(o)}-${k.key}-${i}`,
             label: o,
           }
         }
@@ -324,17 +324,15 @@ const options = [
   }
 })
 
-const params = reactive<{
+const selections = reactive<{
   action: string
+  type: "text" | "card"
+  label: string
   option: string
   input?: boolean
   content?: string
-}>({
-  action: "",
-  option: "0"
-})
+}[]>([])
 
-const selection = ref<string | undefined>(undefined)
 const content = ref<string>("")
 
 const result = reactive({
@@ -342,15 +340,23 @@ const result = reactive({
   content: ""
 })
 
-const handleSelect = (val: any) => {
-  if (val) {
-    const [input, action, option] = val.split('-')
-    params.action = action
-    params.input = input === "true"
-    params.option = option
-  } else {
-    params.input = false
+const error = ref(false)
+const handleSelect = (valList: string[], _: any, pathList: { label: string }[][]) => {
+  selections.length = 0
+  if (valList.length) {
+    valList.forEach((k, i) => {
+      const [type, input, action, option] = k.split('-')
+      console.log(input)
+      selections.push({
+        type: type as "text" | "card",
+        input: input === "true",
+        label: pathList[i].map(k => k.label).join(' / '),
+        action,
+        option
+      })
+    })
   }
+  error.value = new Set(selections.map(k => k.type)).size === 2
   result.show = false
   result.content = ""
   content.value = ""
@@ -358,13 +364,26 @@ const handleSelect = (val: any) => {
 
 const generate = () => {
   result.show = true
-  const url = new URLSearchParams()
-  url.append("action", params.action)
-  if (params.option)
-    url.append("option", params.option)
-  if (content.value)
-    url.append("content", content.value.replace(/\n/g, "\\n"))
-  result.content = `marginnote3app://addon/ohmymn?type=pro&${url.toString()}`
+  const params = new URLSearchParams()
+
+  params.append("info", JSON.stringify(
+    selections.map(k => {
+      if (k.input && k.content)
+        return {
+          action: k.action,
+          type: k.type,
+          option: k.option,
+          content: k.content.replace(/\n/g, "\\n"),
+        }
+      else return {
+        action: k.action,
+        type: k.type,
+        option: k.option,
+      }
+    })
+  ))
+
+  result.content = `marginnote3app://addon/ohmymn?custom=true&${params.toString()}`
 }
 
 const copy = () => {
@@ -377,25 +396,28 @@ const copy = () => {
 
 <template>
   <n-config-provider :theme="isDark ? darkTheme : undefined"
-    :theme-overrides="isDark ? darkThemeOverrides:lightThemeOverrides">
-    <div class="mt-2">
+    :theme-overrides="isDark ? darkThemeOverrides : lightThemeOverrides">
+    <div class="my-2">
       <div class="flex">
-        <n-cascader v-model:value="selection" placeholder="请选择动作" :expand-trigger="'hover'" :options="options"
-          @update:value="handleSelect" :check-strategy="'child'" size="small" clearable />
-        <n-button :text-color="isDark ? '#fff':'#000'" @click="generate" size="small"
-          :disabled="!selection || params.input && !content" class="!ml-4">
+        <n-space vertical class="flex-grow">
+          <n-cascader placeholder="请选择动作" :expand-trigger="'hover'" :options="options" @update:value="handleSelect"
+            :check-strategy="'child'" size="small" clearable filterable multiple :cascade="false"
+            :status="error ? 'error' : 'success'" />
+          <n-input v-if="!error" v-for="param in selections.filter(k => k.input)" v-model:value="param.content"
+            type="textarea" :placeholder="`「${param.label}」有输入`" autosize clearable size="small" />
+        </n-space>
+        <n-button :text-color="isDark ? '#fff' : '#000'" @click="generate" size="small"
+          :disabled="selections.length === 0 || error || !!selections.find(k => k.input && !k.content)" class="!ml-4">
           生成
         </n-button>
       </div>
       <p />
-      <n-input v-if="params.input" v-model:value="content" type="textarea" placeholder="这个动作有输入" autosize clearable
-        size="small" />
-      <p />
       <div class="flex" v-if="result.show && result.content">
-        <n-input v-model:value="result.content" type="textarea" placeholder="" readonly autosize size="small" />
+        <n-input v-model:value="result.content" type="textarea" placeholder="" readonly autosize size="small"
+          status="warning" />
         <n-tooltip placement="bottom" trigger="click">
           <template #trigger>
-            <n-button @click="copy" size="small" class="!ml-4" :text-color="isDark ? '#fff':'#000'">
+            <n-button @click="copy" size="small" class="!ml-4" :text-color="isDark ? '#fff' : '#000'">
               复制
             </n-button>
           </template>

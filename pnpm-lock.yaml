@@ -24,6 +24,7 @@ specifiers:
   vite-plugin-pwa: 0.13.1
   vitepress: 1.0.0-alpha.21
   vue: latest
+  vuedraggable: ^4.1.0
   workbox-build: ^6.5.4
   workbox-window: ^6.5.4
 
@@ -32,6 +33,7 @@ dependencies:
   jiti: 1.15.0
   markdown-it: 13.0.1
   vue: 3.2.41
+  vuedraggable: 4.1.0_vue@3.2.41
 
 devDependencies:
   '@iconify-json/carbon': 1.1.7
@@ -3582,6 +3584,10 @@ packages:
       totalist: 3.0.0
     dev: true
 
+  /sortablejs/1.14.0:
+    resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==}
+    dev: false
+
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -4059,6 +4065,15 @@ packages:
       '@vue/runtime-dom': 3.2.41
       '@vue/server-renderer': 3.2.41_vue@3.2.41
       '@vue/shared': 3.2.41
+
+  /vuedraggable/4.1.0_vue@3.2.41:
+    resolution: {integrity: sha512-FU5HCWBmsf20GpP3eudURW3WdWTKIbEIQxh9/8GE806hydR9qZqRRxRE3RjqX7PkuLuMQG/A7n3cfj9rCEchww==}
+    peerDependencies:
+      vue: ^3.0.1
+    dependencies:
+      sortablejs: 1.14.0
+      vue: 3.2.41
+    dev: false
 
   /vueuc/0.4.49_vue@3.2.41:
     resolution: {integrity: sha512-WarAC44a/Yx78CxkAgROYLq+LkAeCGA/6wHidVoFmHLbzyF3SiP2nzRNGD/8zJeJInXv18EnWK6A//eGgMMq8w==}

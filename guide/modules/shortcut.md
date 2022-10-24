@@ -16,19 +16,19 @@ import Shortcut from '/.vitepress/components/Shortcut.vue';
 1. 打开 `marginnote3app://addon/ohmymn?type=card&shortcut=1` 就可以触发第一个卡片动作。
 2. 打开 `marginnote3app://addon/ohmymn?type=text&shortcut=2` 就可以触发第二个文字动作。
 
-## 捷径 Pro
-可以为每个动作以及任意输入值设置捷径，并将其设置成快捷键。
+## 自定义捷径
 
-::: warning URL 生成器
+::: tip 更新
+[v4.0.14](/update.md) 改进。捷径 Pro 更名为自定义捷径，并改进了语法。
+:::
+
+可以为每个动作以及任意输入值设置 URL，并将其设置成快捷键。甚至可以同时执行多个动作，通过选择的顺序来改变执行的顺序。
+
+::: warning 捷径生成器
 
 <Shortcut/>
 
 :::
-
-1. `marginnote3app://addon/ohmymn?type=pro&action=searchCardInfo&option=0`
-    - 表示执行 `搜索卡片内容` 的动作，`option=0` 表示第一个选项，`中文`。
-2. `marginnote3app://addon/ohmymn?type=pro&action=renameTitle&option=0&content=%25%5B%221%22%5D%20%24%26`
-    - 表示执行 `重命名标题` 的动作，输入 `%["1"] $&`，给选中卡片编号。（这里进行了 URL 编码）
 
 
 ## 怎么使用快捷键打开 URL
