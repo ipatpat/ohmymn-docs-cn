@@ -3,20 +3,30 @@ AutoOCR 的本职工作是进行小语种的在线矫正，在摘录时自动执
 ## 获取 API 密钥
 和 AutoTranslate 一样，AutoOCR 也是使用的第三方服务，需要你自行获取密钥。
 ### 百度 OCR
-[点击查看申请教程，感谢 Bob!](https://bobtranslate.com/service/ocr/baidu.html)
-
-注意查看不同识别服务的免费额度。
-### MathPix
-[点击查看申请教程，感谢天若!](http://ocr.tianruo.net/interface/Math_MathPix.html)
-
-MathPix 的公式识别准确度非常高，注意查看官网信息，目前无免费额度，申请需要信用卡。一次性付费 20 美元，每月可以使用 1000 次。
-## 小语种在线矫正
-
-::: tip
-`摘录时自动执行` 和 `识别语言` 均为当前文档有效，这样可以为不同的文档单独设置。
+::: warning 注意
+具体价格和额度以官网为准。
 :::
 
-MN 的 OCR Pro 不支持很多小语种，导致无法正常摘录，比如俄语。Auto OCR 利用百度的 OCR 服务来重新进行在线矫正。
+[点击查看申请教程，感谢 Bob!](https://bobtranslate.com/service/ocr/baidu.html)
+### MathPix
+
+::: warning 注意
+具体价格和额度以官网为准。
+:::
+
+[点击查看申请教程，感谢天若!](http://ocr.tianruo.net/interface/Math_MathPix.html)
+
+MathPix 仅用于公式识别，其准确度比百度要高。
+
+## 小语种在线矫正
+
+::: warning 注意
+`摘录时自动执行` 和 `识别语言` 均为当前文档有效，这样可以为不同的文档单独设置。
+
+使用百度 OCR 高精度版本，免费额度较低。额度用完会自动停止服务。
+:::
+
+MN 的 OCR Pro 不支持很多小语种，导致无法正常摘录，~~比如俄语~~（现在已经支持）。Auto OCR 利用百度的 OCR 服务来重新进行在线矫正。
 
 ![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/20220813094209.gif?x-oss-process=base_webp)
 
@@ -25,9 +35,10 @@ MN 的 OCR Pro 不支持很多小语种，导致无法正常摘录，比如俄�
 
 
 ### 公式识别
-::: warning
+::: warning 注意
 公式识别只能在 MagicAction for Text 手动调用，无法摘录时自动识别。不要框选超过两行的文字，容易失败，并且在卡片中显示不完整。
 :::
+
 
 需要利用 Markdown 插件来显示公式，所以你必须提前安装好 Markdown 插件。目前有三款 Markdown 插件，推荐使用 [Milkdown](https://bbs.marginnote.cn/t/topic/34772)。
 
@@ -45,8 +56,11 @@ MN 的 OCR Pro 不支持很多小语种，导致无法正常摘录，比如俄�
 5. **先选中一条摘录或者卡片**（否则只能将结果复制到剪贴板上），再框选，再点击 `公式识别`，识别好的公式 Latex 会自动写入之前选中的卡片中。使用 Gesture 模块来调用执行体验更佳。
 
 ### 文字识别
+
 使用 AutoOCR 的配置，重新对摘录进行 OCR。
 ### 手写识别
+
 使用百度 OCR 服务来进行手写识别，注意免费额度。
 ### 二维码识别
+
 使用百度 OCR 服务来进行二维码识别，注意免费额度。

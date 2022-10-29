@@ -66,8 +66,8 @@ OhMyMN 只能处理摘录，从浏览器中拖进来的或者自己输入的都�
 
        - AutoComplete → AnotherAutoDef → AnotherAutoTitle
 
-    2. 两个模块并行。输入的值为上面三个模块传出的结果。如果摘录被清空，则传入 AutoReplace 处理后的摘录内容。
+    2. 三个模块并行。输入的值为上面三个模块传出的结果。如果摘录被清空，则传入 AutoReplace 处理后的摘录内容。
        - AutoTag
-       - AutoComment、AutoTranslate
-
+       - AutoComment
+       - AutoTranslate
 :::

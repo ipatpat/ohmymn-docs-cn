@@ -10,11 +10,19 @@ OhMyMN 的一大特点就是其中各个模块之间可以相互协作，在 Aut
 
 ### 百度翻译
 
+::: warning 注意
+具体价格和额度以官网为准。
+:::
+
 [点击查看申请教程，感谢 Bob!](https://bobtranslate.com/service/translate/baidu.html)
 
 百度翻译感觉翻译会准确一点，支持的语言会更多，还支持自定义术语库，可以自定义一些专业术语的对应关系，从而精确翻译。
 
 ### 彩云小译
+
+::: warning 注意
+具体价格和额度以官网为准。
+:::
 
 [点击查看申请教程，感谢 Bob!](https://bobtranslate.com/service/translate/caiyun.html)
 

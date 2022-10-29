@@ -401,7 +401,7 @@ const copy = () => {
       <div class="flex">
         <n-space vertical class="flex-grow">
           <n-cascader placeholder="请选择动作" :expand-trigger="'hover'" :options="options" @update:value="handleSelect"
-            :check-strategy="'child'" size="small" clearable filterable multiple :cascade="false"
+            :check-strategy="'child'" size="small" clearable multiple :cascade="false"
             :status="error ? 'error' : 'success'" />
           <n-input v-if="!error" v-for="param in selections.filter(k => k.input)" v-model:value="param.content"
             type="textarea" :placeholder="`「${param.label}」有输入`" autosize clearable size="small" />

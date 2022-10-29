@@ -66,7 +66,7 @@ const sidebar: DefaultTheme.Sidebar = {
       ]
     },
     {
-      text: "固定模块",
+      text: "必选模块",
       collapsible: true,
       collapsed: false,
       items: modules.const.map(k => ({

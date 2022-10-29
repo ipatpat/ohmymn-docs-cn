@@ -18,7 +18,7 @@
 
 除此之外，所有模块被分为了两大类：
 
-1. 固定模块：无法关闭的模块。
+1. 必选模块：无法关闭的模块。
 
    - [OhMyMN](./modules/ohmymn)
    - [MagicAction for Card](./modules/magicaction4card)：一些与卡片有关的动作
