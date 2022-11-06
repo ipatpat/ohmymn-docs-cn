@@ -1,1 +1,1 @@
-# OhMyMN Document
+[OhMyMN](https://github.com/marginnoteapp/ohmymn) 的中文文档。
