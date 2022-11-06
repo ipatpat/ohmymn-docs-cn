@@ -20,7 +20,7 @@
 ## 自定义
 
 ::: warning 输入格式
-[replace 函数格式——替换](../custom.md#replace-函数)
+[Replace() 函数格式——替换](../custom.md#replace-函数)
 :::
 
 ## 英文标题规范化
@@ -29,8 +29,8 @@
 
 开启该选项后，AutoFormat 会按照规则将自动生成的标题规范化。请注意，是自动生成的标题，即通过 [Another AutoTitle](anotherautodef.md)，[Another AutoDef](anotherautodef.md) 以及 [AutoComplete](autocomplete.md) 生成的标题。
 
-::: warning
-标题会首字母大写。但是如果标题全部大写，说明是开启了 MN 首页设置里的标题大写。
+::: warning 注意
+标题会首字母大写。但是如果标题全部大写，说明是开启了 MarginNote 首页设置里的标题大写。
 :::
 
 **规则：**

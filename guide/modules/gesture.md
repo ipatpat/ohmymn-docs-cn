@@ -4,7 +4,7 @@ import Shortcut from '/.vitepress/components/Shortcut.vue';
 # Gesture
 
 ::: warning 注意
-仅 iPad 可用。该功能完全由 OhMyMN 提供，与 MN 无关。
+仅 iPad 可用。该功能完全由 OhMyMN 提供，与 MarginNote 无关。
 :::
 
 ![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/79b47e3272bf5eee9be5c5c9737ead591d312917.gif?x-oss-process=base_webp)
@@ -39,25 +39,33 @@ import Shortcut from '/.vitepress/components/Shortcut.vue';
 
 `卡片多选工具栏`
 
+::: warning 注意
+如果只选中单张卡片，但手动开启了多选工具栏，此次多选工具栏的手势不会响应。
+:::
+
 ![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic20220731101505.png?x-oss-process=base_webp)
 
 
-### 文本选择工具栏
+### 文字选择工具栏
 
-这个区域是文本选择相关，用于触发 [MagicAction for Text](magicaction4text.md) 上的动作。框选一个区域也是一样的。
+这个区域是文字选择相关，一般是用手指或者手型工具选择文字时会出现，用于触发 [MagicAction for Text](magicaction4text.md) 上的动作。框选一个区域也是一样的。
 
 ![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic20220731101552.png?x-oss-process=base_webp)
 
 ![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic20220731101619.png?x-oss-process=base_webp)
 
 
-这两个的菜单样式有所不同，但都属于文本选择工具栏。第一个会出现 `设置标题` `加为评论` 等选项，这是因为在选中这段文字之前，你已经选中了一段摘录的笔记。
+这两个的菜单样式有所不同，但都属于文字选择工具栏。第一个会出现 `设置标题` `加为评论` 等选项，这是因为在选中这段文字之前，你已经选中了一段摘录的笔记。
 
 [MagicAction for Text](magicaction4text.md) 已经对此进行特别处理，具体可以自行查看，可以实现了公式 OCR 后直接添加到卡片中。
 
+### 调整文字选择工具栏识别区域
+鉴于部分人始终无法成功触发文字选择工具栏上的手势，我怀疑是设备屏幕大小导致，所以开放了自定义。你可以按照以下步骤进行调整。注意，需要在工具栏顶部横向滑动，来获取最接近的值。由于我固定了工具栏高度，所以你只需要调整顶部的坐标即可，但不要随意填写。
+
+![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/20221104154735.gif?x-oss-process=base_webp)
 ## 手势屏蔽区域
 
-其实这个手势检测是加在了整个 MN 界面上，理论上在任何地方滑动，OhMyMN 都会接收到信息。只是我做了屏蔽，使其只在指定几个区域上做出反应。
+其实这个手势检测是加在了整个 MarginNote 界面上，理论上在任何地方滑动，OhMyMN 都会接收到信息。只是我做了屏蔽，使其只在指定几个区域上做出反应。
 
 但是这几个工具栏位置的判断并没有那么准确，所以可能会导致没有在工具栏上滑动，OhMyMN 却执行了动作。为了减少这种情况发生，我进一步限制了识别的区域，尤其是 `卡片单选工具栏`，限制最大。
 

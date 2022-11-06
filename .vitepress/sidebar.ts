@@ -13,20 +13,16 @@ const sidebar: DefaultTheme.Sidebar = {
           link: "/guide/"
         },
         {
-          text: "基本概念",
-          link: "/guide/concept"
-        },
-        {
           text: "注意事项",
           link: "/guide/attention"
         },
         {
-          text: "配置管理",
-          link: "/guide/profile"
+          text: "基本概念",
+          link: "/guide/concept"
         },
         {
-          text: "MN 使用技巧",
-          link: "/guide/tips"
+          text: "配置管理",
+          link: "/guide/profile"
         }
       ]
     },
@@ -40,11 +36,11 @@ const sidebar: DefaultTheme.Sidebar = {
           link: "/guide/regex"
         },
         {
-          text: "replace() 函数",
+          text: "Replace() 函数",
           link: "/guide/replace"
         },
         {
-          text: "split() 函数",
+          text: "Split() 函数",
           link: "/guide/split"
         },
         {

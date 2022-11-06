@@ -21,7 +21,7 @@
 
 ## 导出、导入
 
-你还可以将所有的配置导出到脑图卡片中，这样就可以随着 MN 一起使用 iCloud 同步，也可以通过导出笔记本来分享配置文件。更多内容可以继续阅读 [MagicAction for Card-配置管理](modules/magicaction4card#配置管理)。
+你还可以将所有的配置导出到脑图卡片中，这样就可以随着 MarginNote 一起使用 iCloud 同步，也可以通过导出笔记本来分享配置文件。更多内容可以继续阅读 [MagicAction for Card-配置管理](modules/magicaction4card#配置管理)。
 
 ## 重置、同步多窗口的配置
 
@@ -31,4 +31,4 @@ OhMyMN 在多窗口的情况下修改配置不会立刻同步过去，你可以�
 
 ## 将自定义设置写入卡片中
 
-基于 MN 的脑图，OhMyMN 还可以将自定义的设置写入脑图卡片中，轻松实现排列组合，更多内容可以继续阅读 [自定义输入格式](custom.md#mnlink)。
+基于 MarginNote 的脑图，OhMyMN 还可以将自定义的设置写入脑图卡片中，轻松实现排列组合，更多内容可以继续阅读 [自定义输入格式](custom.md#mnlink)。

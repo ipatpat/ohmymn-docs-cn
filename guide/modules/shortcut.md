@@ -8,7 +8,7 @@ import Shortcut from '/.vitepress/components/Shortcut.vue';
 :::
 
 ::: warning 注意
-`需要 MN 3.7.19 以上版本`。该功能完全由 OhMyMN 提供，与 MN 无关。
+该功能完全由 OhMyMN 提供，与 MarginNote 无关。
 :::
 
 通过 URL Scheme 来触发 MagicAction 中的动作，在 Mac 上可以设置快捷键打开 URL。
@@ -36,7 +36,8 @@ import Shortcut from '/.vitepress/components/Shortcut.vue';
 1. 点击安装快捷指令 https://www.icloud.com/shortcuts/d9027fc514f04fc4add78ae506baba8d
 2. 设置-辅助功能-键盘-全键盘控制-命令-划到最下面就可以给快捷指令设置快捷键了。
 ### Mac
-Mac 上的工具就很多了，我通常是使用 Karabiner-Elements，这个还可以单独给 MN 设置快捷键，免费。
+
+Mac 上的工具就很多了，我通常是使用 Karabiner-Elements，这个还可以单独给 MarginNote 设置快捷键，免费。Raycast 也非常合适，甚至更加简单。
 
 ## 使用手势打开 URL
 

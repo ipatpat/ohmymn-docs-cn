@@ -1,7 +1,7 @@
 {
   "name": "ohmymn-doc-cn",
-  "version": "4.0.0",
-  "unsignedVersion": "4.0.15",
+  "version": "4.1.0",
+  "unsignedVersion": "4.0.16",
   "scripts": {
     "dev": "vitepress --port 3333",
     "build": "pnpm prefetch && vitepress build && node .vitepress/scripts/build-pwa.mjs",
@@ -38,7 +38,7 @@
     "unplugin-vue-components": "^0.22.8",
     "vite": "^3.1.8",
     "vite-plugin-pwa": "0.13.1",
-    "vitepress": "1.0.0-alpha.21",
+    "vitepress": "1.0.0-alpha.27",
     "workbox-build": "^6.5.4",
     "workbox-window": "^6.5.4"
   }

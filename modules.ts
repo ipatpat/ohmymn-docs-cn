@@ -16,8 +16,8 @@ const modules = {
     ["AutoTag", "autotag"],
     ["AutoStyle", "autostyle"],
     ["CopySearch", "copysearch"],
-    ["AutoOCR", "autoocr"],
     ["AutoTranslate", "autotranslate"],
+    ["AutoOCR", "autoocr"],
     ["AutoComment", "autocomment"],
     ["AutoSimplify", "autosimplify"]
   ]

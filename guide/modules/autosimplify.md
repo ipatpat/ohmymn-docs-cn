@@ -11,7 +11,7 @@
 ## 自定义
 
 ::: warning 输入格式
-[replace 函数格式——替换](../custom.md#replace-函数)
+[Replace() 函数格式——替换](../custom.md#replace-函数)
 :::
 
 ## 异体字

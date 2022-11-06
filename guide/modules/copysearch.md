@@ -37,7 +37,7 @@ CopySearch 给出的解决方案是 `动态选择`
 ::: v-pre
 
 - 比如最常用的 MarkDown 格式 MNLink: `[{{titles.0}}]({{url.pure}})`
-- 再或者是第一条评论: `{{comments.nopic.0}}`
+- 再或者是第一条评论: `{{comments.text.0}}`
 
 ::: tip 更新
 [v4.0.6](/update.md) 改进：自定义复制和自定义搜索可以单独设置。
@@ -65,5 +65,3 @@ CopySearch 给出的解决方案是 `动态选择`
 - 百度搜索：`https://www.baidu.com/s?wd={{keyword}}`
 
   - 指定 Edge 浏览器打开百度搜索：`microsoft-edge-https://baidu.com/s?wd={{keyword}}`
-
-:::

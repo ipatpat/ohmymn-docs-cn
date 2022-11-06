@@ -4,35 +4,31 @@
 
 ## 预先 OCR
 
-::: warning 提示
-仅当前文档
+::: warning 仅当前文档
+需要启用 AutoOCR 模块，但不需要打开 `摘录时自动执行`。
 :::
 
-使用 [AutoOCR](autoocr.md) 来进行小语种的文字识别，从而方便后续的复制，搜索，以及翻译操作。需要启用 AutoOCR 模块，但不需要打开 `摘录时自动执行`。
+使用 [AutoOCR](autoocr.md) 来进行小语种的文字识别，从而方便后续的复制，搜索，以及翻译操作。
 
 ## 预先转为简体中文
 
-::: warning 提示
-仅当前文档
+::: warning 仅当前文档
+需要启用 AutoSimplify 模块，但不需要打开 `摘录时自动执行`。
 :::
 
-::: tip 更新
-[v4.0.6](/update.md) 新增
-:::
-
-使用 [AutoSimplify](autosimplify.md) 进行繁简转换。需要启用 AutoSimplify 模块，但不需要打开 `摘录时自动执行`。
+使用 [AutoSimplify](autosimplify.md) 进行繁简转换。
 
 ## 预先格式化
 
-::: warning 提示
-仅当前文档
+::: warning 仅当前文档
+需要启用 AutoFormat 模块，但不需要打开 `摘录时自动执行`。
 :::
 
 ::: tip 更新
 [v4.0.6](/update.md) 新增
 :::
 
-使用 [AutoFormat](./autoformat.md) 进行排版优化。需要启用 AutoFormat 模块，但不需要打开 `摘录时自动执行`。
+使用 [AutoFormat](./autoformat.md) 进行排版优化。
 
 ## 弹出更多选项
 
@@ -44,15 +40,15 @@ OhMyMN 利用了这一特性。当你在文档中选中了一块摘录后，紧�
 
 ## 动作
 
-### 搜索选中文字
-
-来自于 [CopySearch](copysearch.md)
-
 ### 复制选中文字
 
 ::: tip 更新
-[v4.0.6](/update.md) 新增
+[v4.0.6](/update.md) 新增，[v4.1.0](/update.md) 修改，不再属于 CopySearch。
 :::
+
+这个动作看似没用，但当你搭配 `弹出更多选项` 时，就知道有多好用了。
+
+### 搜索选中文字
 
 来自于 [CopySearch](copysearch.md)
 
