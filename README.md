@@ -1,6 +1,6 @@
 # [OhMyMN](https://github.com/marginnoteapp/ohmymn) 的中文文档
 
-[ [英文版本](https://github.com/marginnoteapp/ohmymn-docs) ]  [ [网站](ohmymn.marginnote.cn) ]
+[ [English](https://github.com/marginnoteapp/ohmymn-docs) ]  [ [网站](ohmymn.marginnote.cn) ]
 
 ## License
 

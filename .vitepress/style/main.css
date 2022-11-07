@@ -126,8 +126,8 @@ img.resizable-img {
     padding: 40px 0 0 0 !important;
   }
 
-  .prev-next ,
   .VPLocalNav ,
+  .VPDocFooter,
   .VPNav {
     display: none !important;
   }
