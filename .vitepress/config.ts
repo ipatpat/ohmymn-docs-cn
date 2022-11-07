@@ -90,7 +90,7 @@ export default defineConfig({
 
     localeLinks: {
       text: "简体中文",
-      items: [{ text: "English", link: "https://ohmymn.marginnote.com" }]
+      items: [{ text: "English", link: "https://ohmymn.vercel.app" }]
     },
 
     socialLinks: [{ icon: "github", link: github }],
