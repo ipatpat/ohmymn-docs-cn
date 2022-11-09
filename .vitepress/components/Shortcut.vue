@@ -320,14 +320,16 @@ const options = [
   }
 })
 
-const selections = reactive<{
+interface Section {
   action: string
   type: "text" | "card"
   label: string
   option: string
   input?: boolean
   content?: string
-}[]>([])
+}
+
+const selections = reactive<Section[]>([])
 
 const content = ref<string>("")
 
@@ -342,11 +344,11 @@ const handleSelect = (valList: string[], _: any, pathList: { label: string }[][]
   if (valList.length) {
     valList.forEach((k, i) => {
       const [type, input, action, option] = k.split('-')
-      console.log(input)
       selections.push({
         type: type as "text" | "card",
         input: input === "true",
         label: pathList[i].map(k => k.label).join(' / '),
+        content: "",
         action,
         option
       })
@@ -360,26 +362,21 @@ const handleSelect = (valList: string[], _: any, pathList: { label: string }[][]
 
 const generate = () => {
   result.show = true
-  const params = new URLSearchParams()
-
-  params.append("info", JSON.stringify(
-    selections.map(k => {
-      if (k.input && k.content)
-        return {
-          action: k.action,
-          type: k.type,
-          option: k.option,
-          content: k.content.replace(/\n/g, "\\n"),
-        }
-      else return {
+  const actions = selections.map(k => {
+    if (k.input && k.content)
+      return {
         action: k.action,
         type: k.type,
         option: k.option,
+        content: k.content.replace(/\n/g, "\\n"),
       }
-    })
-  ))
-
-  result.content = `marginnote3app://addon/ohmymn?custom=true&${params.toString()}`
+    else return {
+      action: k.action,
+      type: k.type,
+      option: k.option,
+    }
+  })
+  result.content = `marginnote3app://addon/ohmymn?actions=${encodeURIComponent(JSON.stringify(actions))}`
 }
 
 const copy = () => {
