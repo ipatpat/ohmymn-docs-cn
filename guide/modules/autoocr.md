@@ -50,7 +50,7 @@ MarginNote 的 OCR Pro 不支持很多小语种，导致无法正常摘录，~~�
 1. 申请百度 OCR 或者 MathPix 的 API 密钥。
 2. 填入 AutoOCR 中，并且选择对应的公式识别服务商。
 3. 安装任意一款 Markdown 插件，并且选择对应的 Markdown 插件。
-4. MagicAction for Text —— 弹出更多选项，开启 `设置为标题`。
+4. MagicAction for Text —— 弹出更多选项，开启 `添加为评论`。
 5. **先选中一条摘录或者卡片**（否则只能将结果复制到剪贴板上），再框选，再点击 `公式识别`，识别好的公式 Latex 会自动写入之前选中的卡片中。使用 Gesture 模块来调用执行体验更佳。
 
 ### 文字识别
